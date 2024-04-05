@@ -14,6 +14,13 @@ values over 8. For compatibility with older versions, the
 @ref GLFW_UNLIMITED_MOUSE_BUTTONS input mode needs to be set to make use of
 this.
 
+MacOS trackpad_34 Support for trackpad zoom and rotate on macOS
+
+Trackpad zoom and rotate events are now supported on macOS using
+@ref glfwSetTrackpadZoomCallback and @ref glfwSetTrackpadRotateCallback. These
+events have not yet been implemented and currently will not emit anything on
+Windows, X11, and Wayland.
+
 ## Caveats {#caveats}
 
 ## Deprecations {#deprecations}
@@ -23,8 +30,12 @@ this.
 ## New symbols {#new_symbols}
 
 ### New functions {#new_functions}
+glfwSetTrackpadZoomCallback
+glfwSetTrackpadRotateCallback
 
 ### New types {#new_types}
+GLFWtrackpadzoomfun
+GLFWtrackpadrotatefun
 
 ### New constants {#new_constants}
 

@@ -183,7 +183,7 @@
 
 #if defined(_WIN32)
  #define GLFW_BUILD_WIN32_TIMER
-#elif defined(__APPLE__)
+#elif defined(_GLFW_COCOA)
  #define GLFW_BUILD_COCOA_TIMER
 #else
  #define GLFW_BUILD_POSIX_TIMER
